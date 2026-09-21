@@ -3,6 +3,10 @@
   "name": "Empty Style",
   "metadata": {},
   "sources": {
+    "openmaptiles": {
+      "type": "vector",
+      "url": "https://api.maptiler.com/tiles/v3-openmaptiles/tiles.json?key=OMbgpnyPw6zNGfPBxEPH"
+    },
     "riskGit": {
       "type": "geojson",
       "data": "https://raw.githubusercontent.com/bobolb/risks/14f957c738ece090fc95c17cb8fbeef8e4b0250a/Risk_regions.geojson"
