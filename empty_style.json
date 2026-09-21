@@ -1585,16 +1585,50 @@
       "paint": {"fill-color": "#ff0000", "fill-opacity": 0.6}
     },
     {
-      "id": "riskMBV",
-      "type": "line",
-      "source": "risk_regions",
-      "filter": [
-        "all",
-        ["==", ["geometry-type"], "Polygon"],
-        ["==", ["get", "riskMBV"], true]
+  "id": "Risk MBV",
+  "type": "line",
+  "source": "risk_regions",
+  "layout": {
+    "visibility": "visible",
+    "line-join": "bevel"
+  },
+  "paint": {
+    "line-color": "hsl(240, 80%, 50%)",
+    "line-width": [
+      "interpolate",
+      [
+        "linear"
       ],
-      "paint": {"line-color": "#0000ff", "line-width": 5}
-    }
+      [
+        "zoom"
+      ],
+      0,
+      1,
+      5,
+      2,
+      10,
+      8
+    ]
+  },
+  "filter": [
+    "all",
+    [
+      "==",
+      [
+        "geometry-type"
+      ],
+      "Polygon"
+    ],
+    [
+      "==",
+      [
+        "get",
+        "riskMBV"
+      ],
+      true
+    ]
+  ]
+}
   ],
   "id": "nqemgwxhq"
 }
