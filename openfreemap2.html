@@ -1,88 +1,21 @@
 <html>
 <head>
-<script src="https://unpkg.com/maplibre-gl@5/dist/maplibre-gl.js"></script>
-<link href="https://unpkg.com/maplibre-gl@5/dist/maplibre-gl.css" rel="stylesheet" />
+<!--
+<script src ="https://unpkg.com/maplibre-gl@5/dist/maplibre-gl.js"></script>
+-->
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@6.10.0/dist/maplibre-gl.css" />
 </head>    
 <body>
-<script src="https://unpkg.com/@maplibre/maplibre-gl-geocoder@1.5.0/dist/maplibre-gl-geocoder.min.js"></script>
-<link
-    rel="stylesheet"
-    href="https://unpkg.com/@maplibre/maplibre-gl-geocoder@1.5.0/dist/maplibre-gl-geocoder.css"
-/>
-<script src="https://unpkg.com/@maplibre/maplibre-gl-geocoder@1.5.0/dist/maplibre-gl-geocoder.min.js"></script>
-<link
-    rel="stylesheet"
-    href="https://unpkg.com/@maplibre/maplibre-gl-geocoder@1.5.0/dist/maplibre-gl-geocoder.css"
-/>
-<div id="map" style="width: 100%; height: 100%"></div>
+<div id="map" style="width: 75%; height: 75%"></div>
 <script type="module">
-
-//const franceBounds = [
-  //[-5.1406, 41.3337], // Southwest: Atlantic Ocean below Brest / near Spanish border
-  //[9.5600, 51.1242]   // Northeast: Near Dunkirk / German-Belgian borders
-//];
-const map = new maplibregl.Map({
-        container: 'map',
-        style: 'https://raw.githubusercontent.com/bobolb/risks/main/empty_style.json',
-        center: [2.3522, 46.6033],
-        zoom: 6,
-        canvasContextAttributes: {antialias: true},
-		attributionControl: {compact: false, customAttribution: "Geographical Disease Risk Index | JPAC"},
-	//	maxBounds: franceBounds,
-    });
-
-    const geocoderApi = {
-        forwardGeocode: async (config) => {
-            const features = [];
-            try {
-                const request =
-            `https://nominatim.openstreetmap.org/search?q=${
-                config.query
-            }&format=geojson&polygon_geojson=1&addressdetails=1`;
-                const response = await fetch(request);
-                const geojson = await response.json();
-                for (const feature of geojson.features) {
-                    const center = [
-                        feature.bbox[0] +
-                    (feature.bbox[2] - feature.bbox[0]) / 2,
-                        feature.bbox[1] +
-                    (feature.bbox[3] - feature.bbox[1]) / 2
-                    ];
-                    const point = {
-                        type: 'Feature',
-                        geometry: {
-                            type: 'Point',
-                            coordinates: center
-                        },
-                        place_name: feature.properties.display_name,
-                        properties: feature.properties,
-                        text: feature.properties.display_name,
-                        place_type: ['place'],
-                        center
-                    };
-                    features.push(point);
-                }
-            } catch (e) {
-                console.error(`Failed to forwardGeocode with error: ${e}`);
-            }
-
-            return {
-                features
-            };
-        }
-    };
-    map.addControl(
-        new MaplibreGeocoder(geocoderApi, {
-            maplibregl			
-        })
-    );
-	map.addControl (new maplibregl.GlobeControl);
-	map.addControl(new maplibregl.NavigationControl({
-        visualizePitch: true,
-        visualizeRoll: true,
-        showZoom: true,
-        showCompass: true	
-	}));
+	import * as maplibregl from 'https://unpkg.com/maplibre-gl@6.10.0/dist/maplibre-gl.mjs';
+	
+	const map = new maplibregl.Map({
+		container: 'map',
+		style: 'https://tiles.openfreemap.org/styles/bright',
+		center: [3, 44],
+		zoom: 6
+	});
 </script>
 </body>
 </html>
