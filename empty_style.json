@@ -1574,38 +1574,27 @@
       }
     },
     {
-  "id": "riskMBV",
-  "type": "line",
-  "source": "risk_regions",
-  "filter": [
-    "all",
-    [
-      "==",
-      ["geometry-type"],
-      "Polygon"
-    ],
-    ["==", ["get", "riskMBV"], true]
-  ],
-  "paint": {
-    "line-color": "#0000ff",
-    "line-width": 5
-  }
-},
+      "id": "riskWNV",
+      "type": "fill",
+      "source": "risk_regions",
+      "filter": [
+        "all",
+        ["==", ["geometry-type"], "Polygon"],
+        ["==", ["get", "riskWNV"], true]
+      ],
+      "paint": {"fill-color": "#ff0000", "fill-opacity": 0.6}
+    },
     {
-  "id": "riskWNV",
-  "type": "fill",
-  "source": "risk_regions",
-  "filter": [
-    "all",
-    [
-      "==",
-      ["geometry-type"],
-      "Polygon"
-    ],
-    ["==", ["get", "riskWNV"], true]
+      "id": "riskMBV",
+      "type": "line",
+      "source": "risk_regions",
+      "filter": [
+        "all",
+        ["==", ["geometry-type"], "Polygon"],
+        ["==", ["get", "riskMBV"], true]
+      ],
+      "paint": {"line-color": "#0000ff", "line-width": 5}
+    }
   ],
-  "paint": {
-    "fill-color": "#ff0000",
-    "fill-opacity": 0.6
-  }
+  "id": "nqemgwxhq"
 }
