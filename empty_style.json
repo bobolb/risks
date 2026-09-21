@@ -1574,6 +1574,17 @@
       }
     },
     {
+      "id": "riskWNV",
+      "type": "fill",
+      "source": "risk_regions",
+      "filter": [
+        "all",
+        ["==", ["geometry-type"], "Polygon"],
+        ["==", ["get", "riskWNV"], true]
+      ],
+      "paint": {"fill-color": "#ff0000", "fill-opacity": 0.6}
+    },
+      {
   "id": "Risk WNV outline",
   "type": "line",
   "source": "risk_regions",
@@ -1633,17 +1644,6 @@
     ]
   ]
 },
-    {
-      "id": "riskWNV",
-      "type": "fill",
-      "source": "risk_regions",
-      "filter": [
-        "all",
-        ["==", ["geometry-type"], "Polygon"],
-        ["==", ["get", "riskWNV"], true]
-      ],
-      "paint": {"fill-color": "#00ff00", "fill-opacity": 0.6}
-    },
     {
   "id": "Risk MBV",
   "type": "line",
