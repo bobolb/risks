@@ -1,0 +1,34 @@
+{
+  "version": 8,
+  "name": "Empty Style",
+  "metadata": {},
+  "sources": {
+    "openmaptiles": {
+      "type": "vector",
+      "url": "https://api.maptiler.com/tiles/v3-openmaptiles/tiles.json?key=get_your_own_OpIi9ZULNHzrESv6T2vL"
+    },
+    "riskGit": {
+      "type": "geojson",
+      "data": "https://raw.githubusercontent.com/bobolb/risks/14f957c738ece090fc95c17cb8fbeef8e4b0250a/Risk_regions.geojson"
+    }
+  },
+  "sprite": "",
+  "glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "riskWNV",
+      "type": "fill",
+      "source": "riskGit",
+      "filter": ["all", ["==", "riskWNV", true]],
+      "paint": {"fill-color": "#ff0000"}
+    },
+    {
+      "id": "riskMBV",
+      "type": "line",
+      "source": "riskGit",
+      "filter": ["all", ["==", "riskMBV", true]],
+      "paint": {"line-color": "#0000ff"}
+    }
+  ],
+  "id": "424y9u2"
+}
