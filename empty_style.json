@@ -16,7 +16,7 @@
     },
     "risk_regions": {
       "type": "geojson",
-      "data": "https://raw.githubusercontent.com/bobolb/risks/14f957c738ece090fc95c17cb8fbeef8e4b0250a/Risk_regions.geojson"
+      "data": "https://raw.githubusercontent.com/bobolb/risks/main/Risk_regions.geojson"
     }
   },
   "sprite": "https://tiles.openfreemap.org/sprites/ofm_f384/ofm",
