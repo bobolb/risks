@@ -147,12 +147,7 @@
 				"dist_pole": 0.23523609948305044,
 				"name": "Alpes-Maritimes",
 				"riskMBV": true,
-				"riskWNV": true,
-				"riskC": true,
-				"riskD": true,
-				"riskY": false,
-				"riskZ": false,
-				"riskW": true,
+				"riskWNV": true
 			},
 			"id": "f72a9fa5-75a1-47a4-af2a-ce1f015d0f2d"
 		},
