@@ -6345,7 +6345,7 @@
 			"type": "symbol",
 			"source": "riskRegions",
 			"layout": {
-				"icon-image": "risks:W",
+				"icon-image": "risks:w",
 				"icon-size": 0.75,
 				"icon-allow-overlap": true,
 				"icon-ignore-placement": true
@@ -6364,6 +6364,35 @@
 					[
 						"get",
 						"riskWNV"
+					],
+					true
+				]
+			]
+		},
+		{
+			"id": "LabelMBV",
+			"type": "symbol",
+			"source": "riskRegions",
+			"layout": {
+				"icon-image": "risks:m",
+				"icon-size": 0.75,
+				"icon-allow-overlap": true,
+				"icon-ignore-placement": true
+			},			
+			"filter": [
+				"all",
+				[
+					"==",
+					[
+						"geometry-type"
+					],
+					"Point"
+				],
+				[
+					"==",
+					[
+						"get",
+						"riskMBV"
 					],
 					true
 				]
