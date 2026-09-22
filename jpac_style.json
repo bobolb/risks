@@ -22,7 +22,7 @@
 	"sprite": [
 		{
 			"id": "default",
-			"url":"https://tiles.openfreemap.org/sprites/ofm_f384/ofm"
+			"url": "https://tiles.openfreemap.org/sprites/ofm_f384/ofm"
 		},
 		{
 			"id": "risks",
@@ -6228,10 +6228,13 @@
 					true
 				]
 			],
-			"paint": {				
-			"fill-pattern": "risks:red",
-			"fill-color": "#ff0000",
+			"paint": {
+				"fill-pattern": "risks:red",
+				"fill-color": "#ff0000",
 				"fill-opacity": 1
+			},
+			"layout": {
+				"visibility": "visible"
 			}
 		},
 		{
@@ -6239,7 +6242,7 @@
 			"type": "line",
 			"source": "riskRegions",
 			"layout": {
-				"line-join": "bevel"
+				"line-join": "round"
 			},
 			"paint": {
 				"line-color": [
@@ -6298,7 +6301,7 @@
 			"type": "line",
 			"source": "riskRegions",
 			"layout": {
-				"line-join": "bevel"
+				"line-join": "round"
 			},
 			"paint": {
 				"line-color": "hsl(240, 80%, 50%)",
@@ -6326,6 +6329,33 @@
 						"geometry-type"
 					],
 					"Polygon"
+				],
+				[
+					"==",
+					[
+						"get",
+						"riskMBV"
+					],
+					true
+				]
+			]
+		},
+		{
+			"id": "LabelWNV",
+			"type": "symbol",
+			"source": "riskRegions",
+			"layout": {
+				"icon-image": "risks:W",
+				"icon-size": 0.5
+			},			
+			"filter": [
+				"all",
+				[
+					"==",
+					[
+						"geometry-type"
+					],
+					"Point"
 				],
 				[
 					"==",
