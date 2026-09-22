@@ -946,7 +946,8 @@
 				]
 			],
 			"layout": {
-				"line-join": "round"
+				"line-join": "round",
+				"visibility": "none"
 			},
 			"paint": {
 				"line-color": "#cfcdca",
@@ -2764,7 +2765,8 @@
 			],
 			"layout": {
 				"line-cap": "butt",
-				"line-join": "round"
+				"line-join": "round",
+				"visibility": "visible"
 			},
 			"paint": {
 				"line-color": "#e9ac77",
@@ -6227,7 +6229,6 @@
 			"type": "line",
 			"source": "riskRegions",
 			"layout": {
-				"visibility": "visible",
 				"line-join": "bevel"
 			},
 			"paint": {
@@ -6287,7 +6288,6 @@
 			"type": "line",
 			"source": "riskRegions",
 			"layout": {
-				"visibility": "visible",
 				"line-join": "bevel"
 			},
 			"paint": {
@@ -6332,7 +6332,7 @@
 			"type": "symbol",
 			"source": "openmaptiles",
 			"source-layer": "place",
-			"minzoom": 8,
+			"minzoom": 12,
 			"filter": [
 				"match",
 				[
@@ -6399,7 +6399,7 @@
 					12,
 					10
 				],
-				"text-transform": "uppercase"
+				"visibility": "visible"
 			},
 			"paint": {
 				"text-color": "#333",
@@ -6483,7 +6483,8 @@
 					10,
 					11,
 					12
-				]
+				],
+				"visibility": "visible"
 			},
 			"paint": {
 				"text-color": "#000",
@@ -6567,7 +6568,8 @@
 					12,
 					11,
 					14
-				]
+				],
+				"visibility": "visible"
 			},
 			"paint": {
 				"text-color": "#000",
@@ -6640,7 +6642,8 @@
 					8,
 					14
 				],
-				"text-transform": "uppercase"
+				"text-transform": "uppercase",
+				"visibility": "none"
 			},
 			"paint": {
 				"text-color": "#333",
@@ -6741,7 +6744,8 @@
 					13,
 					11,
 					18
-				]
+				],
+				"visibility": "visible"
 			},
 			"paint": {
 				"text-color": "#000",
@@ -6842,7 +6846,8 @@
 					14,
 					11,
 					20
-				]
+				],
+				"visibility": "visible"
 			},
 			"paint": {
 				"text-color": "#000",
