@@ -6361,7 +6361,7 @@
 					"==",
 					[
 						"get",
-						"riskMBV"
+						"riskWNV"
 					],
 					true
 				]
