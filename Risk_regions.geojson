@@ -1023,7 +1023,8 @@
 				"dist_pole": 0.18459500753622332,
 				"name": "Gironde",
 				"riskMBV": true,
-				"riskWNV": true
+				"riskWNV": true,
+				"risks": "cw"
 			},
 			"id": "6ad7986d-12a8-4e96-a1ff-a1e62733d681"
 		},
@@ -78419,8 +78420,7 @@
 				"HASC_2": "FR.GI",
 				"name": "Gironde",
 				"riskMBV": true,
-				"riskWNV": true,
-				"risks": "cw"
+				"riskWNV": true
 			},
 			"geometry": {
 				"type": "MultiPolygon",
