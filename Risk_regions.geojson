@@ -78419,7 +78419,8 @@
 				"HASC_2": "FR.GI",
 				"name": "Gironde",
 				"riskMBV": true,
-				"riskWNV": true
+				"riskWNV": true,
+				"risks": "cw"
 			},
 			"geometry": {
 				"type": "MultiPolygon",

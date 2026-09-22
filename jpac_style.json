@@ -6469,12 +6469,9 @@
 					"Point"
 				],
 				[
-					"==",
-					[
-						"get",
-						"riskWNV"
-					],
-					true
+					"has",
+					"risks"
+					
 				]
 			]
 		},
