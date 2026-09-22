@@ -393673,7 +393673,7 @@
 				"HASC_2": "IT.MO",
 				"name": "Modena",
 				"riskMBV": true,
-				"riskWNV": null
+				"riskWNV": false
 			},
 			"geometry": {
 				"type": "MultiPolygon",
@@ -485268,7 +485268,8 @@
 				"HASC_2": "IT.MO",
 				"name": "Modena",
 				"riskMBV": true,
-				"riskWNV": null,
+				"riskWNV": false,
+				"risks": "c",
 				"dist_pole": 0.12169825389051533
 			},
 			"id": "7a11c1e4-7d35-4e48-b573-b638e3dbdeb3"
@@ -485298,7 +485299,8 @@
 				"HASC_2": "IT.VR",
 				"name": "Verona",
 				"riskMBV": true,
-				"riskWNV": null,
+				"riskWNV": false,
+				"risks": "c",
 				"dist_pole": 0.22344943499593115
 			},
 			"id": "7b876f58-e0a7-4ca1-aab1-7dc6af105fcd"
