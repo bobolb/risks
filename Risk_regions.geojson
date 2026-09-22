@@ -2278,7 +2278,8 @@
 				"dist_pole": 0.2103903897817618,
 				"name": "Pyrénées-Orientales",
 				"riskMBV": true,
-				"riskWNV": true
+				"riskWNV": true,
+				"risks": "dw"
 			},
 			"id": "cbad646f-e8af-4341-a1b2-ec38f36bc6e6"
 		},
@@ -598754,6 +598755,13 @@
 							"attribute": "risks",
 							"type": "String",
 							"values": [
+								"c",
+								"d",
+								"w",
+								"y",
+								"z",
+								"cw",
+								"dw",
 								"cdw"
 							]
 						},						

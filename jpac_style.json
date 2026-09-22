@@ -6433,10 +6433,14 @@
 			"minzoom": 6,
 			"layout": {
 				"icon-image": [
-					"to-string",
+					"concat",
+					"risks:",
 					[
-						"get",
-						"risks"
+						"to-string",
+						[
+							"get",
+							"risks"
+						]
 					]
 				],
 				"icon-size": [
