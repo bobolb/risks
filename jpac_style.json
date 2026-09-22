@@ -6388,7 +6388,7 @@
 			"source": "riskRegions",
 			"minzoom": 6,
 			"layout": {
-				"icon-image": "risks:m",
+				"icon-image": "risks:c",
 				"icon-size": [
       				"interpolate",
       					[
