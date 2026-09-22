@@ -148,7 +148,7 @@
 				"name": "Alpes-Maritimes",
 				"riskMBV": true,
 				"riskWNV": true,
-				"riskC": true
+				"risks": "cdw"
 			},
 			"id": "f72a9fa5-75a1-47a4-af2a-ce1f015d0f2d"
 		},
@@ -598751,9 +598751,12 @@
 							"type": "Boolean"
 						},
 						{
-							"attribute": "riskC",
-							"type": "Boolean"
-						},
+							"attribute": "risks",
+							"type": "string",
+							"values": [
+								"cdw"
+							]
+						},						
 						{
 							"attribute": "VARNAME_1",
 							"type": "String",

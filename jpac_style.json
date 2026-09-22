@@ -6347,22 +6347,23 @@
 			"minzoom": 6,
 			"layout": {
 				"icon-image": "risks:w",
-				 "icon-size": [
-      				"interpolate",
-      					[
-        					"linear"
-      					],
-      					[
-        					"zoom"
-      					],      					
-						6,
-						0.1,
-						6.2,
-						1			
-    				],	
+				"icon-size": [
+					"interpolate",
+					[
+						"linear"
+					],
+					[
+						"zoom"
+					],
+					6,
+					0.1,
+					6.2,
+					1
+				],
 				"icon-allow-overlap": true,
-				"icon-ignore-placement": true
-			},			
+				"icon-ignore-placement": true,
+				"visibility": "none"
+			},
 			"filter": [
 				"all",
 				[
@@ -6390,21 +6391,22 @@
 			"layout": {
 				"icon-image": "risks:wd",
 				"icon-size": [
-      				"interpolate",
-      					[
-        					"linear"
-      					],
-      					[
-        					"zoom"
-      					],      					
-						6,
-						0.1,
-						6.2,
-						1			
-    				],
+					"interpolate",
+					[
+						"linear"
+					],
+					[
+						"zoom"
+					],
+					6,
+					0.1,
+					6.2,
+					1
+				],
 				"icon-allow-overlap": true,
-				"icon-ignore-placement": true			
-			},			
+				"icon-ignore-placement": true,
+				"visibility": "none"
+			},
 			"filter": [
 				"all",
 				[
@@ -6425,28 +6427,34 @@
 			]
 		},
 		{
-			"id": "LabelC",
+			"id": "LabelRisks",
 			"type": "symbol",
 			"source": "riskRegions",
 			"minzoom": 6,
 			"layout": {
-				"icon-image": "risks:c",
+				"icon-image": [
+					"to-string",
+					[
+						"get",
+						"risks"
+					]
+				],
 				"icon-size": [
-      				"interpolate",
-      					[
-        					"linear"
-      					],
-      					[
-        					"zoom"
-      					],      					
-						6,
-						0.1,
-						6.2,
-						1			
-    				],
+					"interpolate",
+					[
+						"linear"
+					],
+					[
+						"zoom"
+					],
+					6,
+					0.1,
+					6.2,
+					1
+				],
 				"icon-allow-overlap": true,
-				"icon-ignore-placement": true			
-			},			
+				"icon-ignore-placement": true
+			},
 			"filter": [
 				"all",
 				[
