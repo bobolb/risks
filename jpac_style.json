@@ -6425,6 +6425,48 @@
 			]
 		},
 		{
+			"id": "LabelC",
+			"type": "symbol",
+			"source": "riskRegions",
+			"minzoom": 6,
+			"layout": {
+				"icon-image": "risks:c",
+				"icon-size": [
+      				"interpolate",
+      					[
+        					"linear"
+      					],
+      					[
+        					"zoom"
+      					],      					
+						6,
+						0.1,
+						6.2,
+						1			
+    				],
+				"icon-allow-overlap": true,
+				"icon-ignore-placement": true			
+			},			
+			"filter": [
+				"all",
+				[
+					"==",
+					[
+						"geometry-type"
+					],
+					"Point"
+				],
+				[
+					"==",
+					[
+						"get",
+						"riskC"
+					],
+					true
+				]
+			]
+		},
+		{
 			"id": "label_other",
 			"type": "symbol",
 			"source": "openmaptiles",
