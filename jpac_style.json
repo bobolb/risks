@@ -21,12 +21,12 @@
 	},
 	"sprite": [
 		{
-			"id": "ofm",
+			"id": "default",
 			"url":"https://tiles.openfreemap.org/sprites/ofm_f384/ofm"
 		},
 		{
 			"id": "risks",
-			"url": "https://raw.githubusercontent.com/bobolb/risks/main/sprites"
+			"url": "https://raw.githubusercontent.com/bobolb/risks/main/sprites/risks"
 		}
 	],
 	"glyphs": "https://tiles.openfreemap.org/fonts/{fontstack}/{range}.pbf",
@@ -6229,7 +6229,7 @@
 				]
 			],
 			"paint": {				
-			"fill-pattern": "https://raw.githubusercontent.com/bobolb/risks/main/red-stripe.png",
+			"fill-pattern": "risks:red",
 			"fill-color": "#ff0000",
 				"fill-opacity": 0.5
 			}
