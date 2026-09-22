@@ -6231,7 +6231,7 @@
 			"paint": {				
 			"fill-pattern": "risks:red",
 			"fill-color": "#ff0000",
-				"fill-opacity": 0.5
+				"fill-opacity": 1
 			}
 		},
 		{
