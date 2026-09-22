@@ -6344,9 +6344,22 @@
 			"id": "LabelWNV",
 			"type": "symbol",
 			"source": "riskRegions",
+			"minzoom": 6,
 			"layout": {
 				"icon-image": "risks:w",
-				"icon-size": 0.75,
+				 "icon-size": [
+      				"interpolate",
+      					[
+        					"linear"
+      					],
+      					[
+        					"zoom"
+      					],      					
+						6,
+						0.1,
+						6.2,
+						1			
+    				],	
 				"icon-allow-overlap": true,
 				"icon-ignore-placement": true
 			},			
@@ -6373,11 +6386,24 @@
 			"id": "LabelMBV",
 			"type": "symbol",
 			"source": "riskRegions",
+			"minzoom": 6,
 			"layout": {
 				"icon-image": "risks:m",
-				"icon-size": 0.75,
+				"icon-size": [
+      				"interpolate",
+      					[
+        					"linear"
+      					],
+      					[
+        					"zoom"
+      					],      					
+						6,
+						0.1,
+						6.2,
+						1			
+    				],
 				"icon-allow-overlap": true,
-				"icon-ignore-placement": true
+				"icon-ignore-placement": true			
 			},			
 			"filter": [
 				"all",
