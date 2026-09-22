@@ -388,7 +388,8 @@
 				"dist_pole": 0.16578965654765873,
 				"name": "Bouches-du-Rhône",
 				"riskMBV": true,
-				"riskWNV": true
+				"riskWNV": true,
+				"risks": "cdw"
 			},
 			"id": "7481b743-0ae3-47c0-8441-fde8bde61c4a"
 		},
@@ -478,7 +479,8 @@
 				"dist_pole": 0.2781756370326985,
 				"name": "Charente",
 				"riskMBV": true,
-				"riskWNV": true
+				"riskWNV": true,
+				"risks": "cw"
 			},
 			"id": "2468dc18-7359-473e-90d1-449b0ab7755f"
 		},
@@ -508,7 +510,8 @@
 				"dist_pole": 0.18896731364132793,
 				"name": "Charente-Maritime",
 				"riskMBV": false,
-				"riskWNV": true
+				"riskWNV": true,
+				"risks": "w"
 			},
 			"id": "7d179eb9-068d-48db-ab3c-32c3022bb010"
 		},
@@ -748,7 +751,8 @@
 				"dist_pole": 0.43749434282056743,
 				"name": "Dordogne",
 				"riskMBV": true,
-				"riskWNV": false
+				"riskWNV": false,
+				"risks": "c"
 			},
 			"id": "53629e51-4757-4fd4-8c1b-28b066a25fe7"
 		},
@@ -958,7 +962,8 @@
 				"dist_pole": 0.24401632676645715,
 				"name": "Gard",
 				"riskMBV": true,
-				"riskWNV": false
+				"riskWNV": false,
+				"risks": "cd"
 			},
 			"id": "967116d9-e6c0-49e9-8098-e73e81cb8c33"
 		},
@@ -1078,7 +1083,8 @@
 				"dist_pole": 0.13705955283124985,
 				"name": "Haute-Garonne",
 				"riskMBV": true,
-				"riskWNV": true
+				"riskWNV": true,
+				"risks": "cdw"
 			},
 			"id": "e3cce9bc-0777-4b55-b9ee-3dbd0b3fc800"
 		},
@@ -1258,7 +1264,8 @@
 				"dist_pole": 0.2659870002843795,
 				"name": "Hautes-Pyrénées",
 				"riskMBV": true,
-				"riskWNV": true
+				"riskWNV": true,
+				"risks": "dw"
 			},
 			"id": "5b7c7527-0f28-4a4a-88b9-0c7ceb208f8d"
 		},
@@ -1378,7 +1385,8 @@
 				"dist_pole": 0.2769718471813689,
 				"name": "Hérault",
 				"riskMBV": true,
-				"riskWNV": true
+				"riskWNV": true,
+				"risks": "cdw"
 			},
 			"id": "157720f7-082c-4e34-a7c2-9d085c4dc73e"
 		},
@@ -1498,7 +1506,8 @@
 				"dist_pole": 0.21763357392645613,
 				"name": "Isère",
 				"riskMBV": true,
-				"riskWNV": false
+				"riskWNV": false,
+				"risks": "c"
 			},
 			"id": "0c0f6fe8-8fe5-4c4e-9ea2-92e09c1524d0"
 		},
@@ -2699,7 +2708,8 @@
 				"dist_pole": 0.3119260565730048,
 				"name": "Var",
 				"riskMBV": true,
-				"riskWNV": true
+				"riskWNV": true,
+				"risks": "cdw"
 			},
 			"id": "fb7d6540-f3fb-4709-aec8-14ce3d124f29"
 		},
@@ -2729,7 +2739,8 @@
 				"dist_pole": 0.22167326108967503,
 				"name": "Vaucluse",
 				"riskMBV": true,
-				"riskWNV": false
+				"riskWNV": false,
+				"risks": "d"
 			},
 			"id": "2d979625-04e4-4645-92c0-2b0014dd487e"
 		},
