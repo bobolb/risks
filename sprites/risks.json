@@ -41,6 +41,20 @@
     "x": 128,
     "y": 64
   },
+  "wcd": {
+    "height": 32,
+    "width": 96,
+    "pixelRatio": 1,
+    "x": 0,
+    "y": 64
+  },
+  "wd": {
+    "height": 32,
+    "width": 64,
+    "pixelRatio": 1,
+    "x": 0,
+    "y": 96
+  },
   "cd": {
     "height": 32,
     "width": 64,
