@@ -19,7 +19,16 @@
 			"data": "https://raw.githubusercontent.com/bobolb/risks/main/Risk_regions.geojson"
 		}
 	},
-	"sprite": "https://tiles.openfreemap.org/sprites/ofm_f384/ofm",
+	"sprite": [
+		{
+			"id": "ofm",
+			"url":"https://tiles.openfreemap.org/sprites/ofm_f384/ofm"
+		},
+		{
+			"id": "risks",
+			"url": "https://raw.githubusercontent.com/bobolb/risks/main/sprites"
+		}
+	],
 	"glyphs": "https://tiles.openfreemap.org/fonts/{fontstack}/{range}.pbf",
 	"layers": [
 		{
@@ -6219,8 +6228,9 @@
 					true
 				]
 			],
-			"paint": {
-				"fill-color": "#ff0000",
+			"paint": {				
+			"fill-pattern": "https://raw.githubusercontent.com/bobolb/risks/main/red-stripe.png",
+			"fill-color": "#ff0000",
 				"fill-opacity": 0.5
 			}
 		},
