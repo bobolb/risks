@@ -598752,7 +598752,7 @@
 						},
 						{
 							"attribute": "risks",
-							"type": "string",
+							"type": "String",
 							"values": [
 								"cdw"
 							]
